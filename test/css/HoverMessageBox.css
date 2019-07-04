@@ -1,0 +1,58 @@
+﻿/*   HTNL使用规范：
+
+    <div class="suspension">
+        <div class="suspensionTriangle"></div>
+        <div class="suspensionContext">
+            <asp:Button ID="refershEdit" Text="更新修改" OnClick="refershEdit_Click" runat="server"/>
+        </div>
+    </div>
+*/
+
+
+/* 悬浮div消息层 */
+.suspension {
+    display: none;
+    position: relative;
+    z-index: 3;
+    border: 0px;
+    left: 140px;
+    top: 0px;
+    text-align: center;
+    width: 100px;
+}
+
+/* 悬浮div消息层 中的三角形 */
+.suspensionTriangle {
+    display: block;
+    height: 0px;
+    width: 0px;
+    border-style: solid;
+    border-width: 0px 10px 10px 10px;
+    border-bottom-color: white;
+    border-left-color: rgba(255,255,255,0);
+    border-right-color: rgba(255,255,255,0);
+    margin: auto;
+}
+
+/* 悬浮div消息层 中的内容部分 */
+.suspensionContext {
+    display: block;
+    border: 1px solid #696;
+    width: auto;
+    background-color: #D7DAAB;
+    text-align: center;
+    -webkit-box-shadow: #666 0px 0px 10px;
+    -moz-box-shadow: #666 0px 0px 10px;
+    box-shadow: #666 0px 0px 10px;
+    behavior: url(/PIE.htc);
+}
+
+    .suspensionContext input {
+        margin: auto;
+        width: 70px;
+        border: 0px;
+        background-color: #D7DAAB;
+        color: green;
+        font-size: 12px;
+        font-family: 汉仪细行楷;
+    }

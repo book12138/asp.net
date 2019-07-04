@@ -1,0 +1,23 @@
+﻿*{margin:0px;padding:0px;}
+
+
+.fl_left {
+    float: left;
+}
+
+.fl_right {
+    float: right;
+}
+
+.clr {
+    clear: both;
+}
+
+/* 页面顶部 */
+.head {
+    background-image: url('../backImg/bg_header.jpg');
+    background-repeat: repeat-x;
+    height: 39px;
+    margin-top: 0px;
+    border-top: 0px;
+}

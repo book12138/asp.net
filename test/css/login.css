@@ -1,0 +1,303 @@
+﻿/*遮罩*/
+.shade{
+    background-color:white;
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:99;
+    opacity:0.5;
+    display:none;
+}
+
+/*登录框*/
+.login{
+    display:none;
+    position:absolute;
+    z-index:100;
+    background-color:white;
+    width:500px;    
+    border:1px solid rgba(0,0,0,0.5);
+    box-shadow:5px 5px 5px rgba(0,0,0,0.5);
+}
+
+/*隐藏登录框按钮*/
+.hideLogin {
+    float: right;
+    margin-right: 20px;
+    margin-top:10px;
+}
+
+    .hideLogin a {
+        font-size: 20px;
+        color: black;
+        text-decoration:none;
+    }
+
+    .hideLogin a:hover {
+        color: chocolate;
+    }
+
+/*登录框正文*/
+.loginContent{
+    padding-top:30px;
+    margin:auto;
+    width:400px;
+    background-color:white;
+    text-align:center;
+    font-family:宋体;
+}
+
+    /*登录框1级标题*/
+    .loginContent .loginTitle {
+        font-size: 22px;
+        font-family: 宋体;
+        font-weight: 600;
+        text-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    }
+
+    .loginTitle span {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-decoration: underline;
+        color: #6E6C68
+    }
+
+/*用户信息输入区*/
+.userDataInput {
+    width: 400px;
+    text-align: left;
+    padding-top: 40px;
+    font-size: 15px;
+    font-family: 微软雅黑;
+}
+
+    .userDataInput div {
+        display: block;
+        margin-left: 20px;
+        width: 340px;
+        border-radius: 4px;
+        border: 1px solid rgba(0,0,0,0.5);
+        /*box-shadow: 5px 5px 5px rgba(0,0,0,0.2) inset;*/
+    }
+
+    .userDataInput .clr{
+        border:0px;
+    }
+
+    /*用户名错误信息提示*/
+    .userDataInput .nameErrorInfor {
+        font-size: 13px;
+        color: red;
+        border: 0px;
+        font-family:DengXian;
+        padding-top:5px;
+    }
+
+    /*密码错误信息提示*/
+    .userDataInput .pwdErrorInfor {
+        font-size: 13px;
+        color: red;
+        border: 0px;
+        font-family: DengXian;
+        margin-top: 5px;
+    }
+
+    /*用户以及密码图*/
+    .userDataInput img {
+        width: 33px;
+        height: 35px;
+        margin: 0px;
+        padding: 0px;
+        float: left;
+        margin-left: 5px;
+        /*border-bottom: 1px solid rgba(0,0,0,0.5);
+            border-top: 1px solid rgba(0,0,0,0.5);
+            border-left: 1px solid rgba(0,0,0,0.5);*/
+    }
+
+    /*是否保持登录状态 以及 忘记密  div盒*/
+    .userDataInput .saveLoginDataAndForgetPwd_div {
+        border: 0px;
+        margin-top: 10px;
+        font-size: 12px;
+        margin-bottom:10px;
+    }
+
+    /*装“是否保持登录状态”的盒子*/
+    .userDataInput .fl_left {
+        margin-left: 10px;
+        border: 0px;
+    }
+
+    /*文字*/
+    .saveLoginDataAndForgetPwd_di span{
+        font-family:DengXian ;  
+    }
+
+/*“是否保持登录状态”的复选框*/
+.saveLoginDataCheckBox {
+    width: 12px;
+    height: 12px;
+}
+
+    /*忘记密码链接*/
+    .userDataInput a {
+        float: right;
+        margin-right: 30px;
+        color: brown;        
+    }
+
+/*用户名与密码*/
+.userName, .userPwd {
+    float: right;
+    width: 293px;
+    height: 33px;
+    border: 0px;
+    background-color: #faffbd;
+    /*border-bottom: 1px solid rgba(0,0,0,0.5);
+    border-top: 1px solid rgba(0,0,0,0.5);
+    border-right: 1px solid rgba(0,0,0,0.5);
+    border-left:0px;*/
+}
+
+/*登录所需注意的提示信息*/
+.hint{
+    text-align:left;
+    margin:auto;
+    font-size:12px;
+}
+
+    .hint a{
+        color:darkgray;
+    }
+
+/*登录按钮*/
+.loginContentBtn {
+    display:block;
+    border: 0px;
+    width: 300px;
+    height: 35px;
+    margin:auto;
+    margin-top:40px;
+    background-color: rgba(0,0,0,0.8);
+    color:white;
+    font-weight:600;
+}
+
+/*前往创建账户*/
+.goToCreateUserAccount {
+    color: brown;
+}
+
+
+/***************************账号创建**************************/
+
+/*创建账户窗口*/
+.createAccount{
+    display:none;
+}
+
+/*用户名错误信息提示*/
+.userDataInput .createNameErrorInfor {
+    font-size: 13px;
+    color: red;
+    border: 0px;
+    font-family: DengXian;
+    padding-top: 5px;
+}
+
+/*密码错误信息提示*/
+.userDataInput .createPwdErrorInfor {
+    font-size: 13px;
+    color: red;
+    border: 0px;
+    font-family: DengXian;
+    margin-top: 5px;
+}
+
+/*再次输入密码错误信息提示*/
+.userDataInput .createPwdAgainErrorInfor {
+    font-size: 13px;
+    color: red;
+    border: 0px;
+    font-family: DengXian;
+    margin-top: 5px;
+}
+
+/*用户名与密码*/
+.createUserName, .createUserPwd,.createAgainUserPwd {
+    float: right;
+    width: 293px;
+    height: 33px;
+    border: 0px;
+    background-color: #faffbd;
+}
+
+/*********************安全措施***********************/
+.securityMeasures{
+    display:none;
+}
+
+/*问题 答案 提示*/
+.questions, .answer, .answerHint {
+    float: right;
+    width: 293px;
+    height: 33px;
+    border: 0px;
+    background-color: #faffbd;
+}
+
+/*用户名错误信息提示*/
+.userDataInput .questionsErrorInfor {
+    font-size: 13px;
+    color: red;
+    border: 0px;
+    font-family: DengXian;
+    padding-top: 5px;
+}
+
+/*密码错误信息提示*/
+.userDataInput .answerErrorInfor {
+    font-size: 13px;
+    color: red;
+    border: 0px;
+    font-family: DengXian;
+    margin-top: 5px;
+}
+
+/*再次输入密码错误信息提示*/
+.userDataInput .answerHintErrorInfor {
+    font-size: 13px;
+    color: red;
+    border: 0px;
+    font-family: DengXian;
+    margin-top: 5px;
+}
+
+/************************密码找回之 确认找回需密码找回的账户名***********************/
+.PasswordRecovery_OfAccountName{
+    display:none;
+}
+
+/*用户名*/
+.PR_userName {
+    float: right;
+    width: 293px;
+    height: 33px;
+    border: 0px;
+    background-color: #faffbd;
+}
+
+/*再次输入密码错误信息提示*/
+.userDataInput .PR_nameErrorInfor {
+    font-size: 13px;
+    color: red;
+    border: 0px;
+    font-family: DengXian;
+    margin-top: 5px;
+}
+
+/***********************密码找回之 身份验证**********************/
+.authentication {
+    display: none;
+}
+

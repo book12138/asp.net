@@ -1,0 +1,117 @@
+﻿*{
+    margin:0px;
+    padding:0px;
+}
+
+.clr{
+    clear:both;
+}
+
+body{
+    background:url(../Content/Image/2323.jpg) no-repeat;
+    background-size:cover;
+}
+
+.main {
+    width: 350px;
+    margin: auto;
+    margin-top: 200px;
+}
+
+/*头像*/
+.headImg {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: relative;
+    border: 1.5px solid #FAD9FA;
+    left: 135px;
+    top: 35px;
+}
+
+/*登录框主体*/
+.loginContent {
+    /*background-color: #cab0d3;*/
+    height: 252px;
+    width: 350px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, #EFC9EF, #F589F6);
+}
+
+    /*用户名输入部分*/
+    .loginContent .userName {
+        margin: auto;
+        border: 1px dashed blueviolet;
+        width: 250px;
+        height: 34px;
+        border-radius: 20px;
+        display: block;
+        background-color: #ffffff;
+    }
+
+        .loginContent .userName img {
+            height: 30px;
+            width: 30px;
+            float: left;
+            margin-top: 2px;
+            margin-left: 8px;
+            opacity: 0.8;
+        }
+
+        .loginContent .userName input {
+            border: 0px;
+            background-color: rgba(0,0,0,0);
+            color: #ded0e1;
+            float: left;
+            width: 195px;
+            height: 34px;
+        }
+
+    /*密码输入部分*/
+    .loginContent .passWord {
+        margin: auto;
+        border: 1px dashed blueviolet;
+        width: 250px;
+        height: 34px;
+        border-radius: 20px;
+        display: block;
+        background-color: #ffffff;
+    }
+
+        .loginContent .passWord img {
+            height: 24px;
+            width: 24px;
+            float: left;
+            margin-top: 5px;
+            margin-left: 12px;
+            opacity: 0.8;
+        }
+
+        .loginContent .passWord input {
+            border: 0px;
+            background-color: rgba(0,0,0,0);
+            color: #ded0e1;
+            float: left;
+            /*background-color: aquamarine;*/
+            width: 195px;
+            height: 34px;
+            margin-left: 2px;
+        }
+
+    /*登录按钮*/
+    .loginContent .loginBtn {
+        width: 100%;
+        background-color: #DF90E0;
+        margin-top: 5px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background: linear-gradient(#da40f8, #9f21ca);
+        border-left: 0px;
+        border-right: 0px;
+        border-top: solid #da40f8;
+        border-bottom: solid #9f21ca; /*#9f21ca*/
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }

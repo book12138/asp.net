@@ -1,0 +1,225 @@
+﻿body {
+    background-color: white;
+    /*禁止文本被选中*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.fl_left{
+    float:left;
+}
+
+.fl_right{
+    float:right;
+}
+
+/* 页面顶部 */
+.head {
+    background-image: url('../backImg/bg_header.jpg');
+    background-repeat:repeat-x;
+    height:39px;
+    margin-top:0px;
+    border-top:0px;
+}
+
+/* 操作区 */
+.Operation {
+    background-image: url('../backImg/bg_search.gif');
+    width: 100%;
+    height: 30px;
+}
+
+/* 返回主页按钮 */
+.btnHome {
+    background-image: url('../backImg/btn_index.gif');
+    width: 85px;
+}
+
+/* 添加数据按钮 */
+.btnAdd {
+    background-image: url('../backImg/btn_add.gif');
+    width: 90px;
+}
+
+/* 列表展示数据按钮 */
+.btnList {
+    background-image: url('../backImg/btn_list.gif');
+    width: 90px;
+}
+
+/* 背景音乐控制按钮 */
+#PlaySound {
+    color: white;
+    background-color: #ED84B9;
+    font-size: 12px;
+    border-radius: 2px 10px 2px 10px;
+    width: 90px;
+    border-color: white white #F283E2 white;
+    padding: 1px 2px 2px 1px;
+    margin-right: 20px;
+    float: right;
+    height:25px;
+}
+
+.btnHome, .btnAdd, .btnList {
+    height: 25px;
+    /*border: 1px solid #77EF4B;*/
+    border-radius: 10%;
+    margin-left: 10px;
+    float:left;
+}
+
+/* 文本框 */
+.text {
+    width: 120px;
+    border: 1px solid #F74FC8;
+    border-radius: 8px;
+    margin-left: 20px;
+    color: #744874;
+    text-align: center;
+    font-size: 12px;
+    box-shadow: 0px 0px 10px #F283E2 inset;
+    border: 3px hidden #808080;
+    height:22px;
+    margin-bottom:5px; 
+    float:left;
+    margin-top:2px;
+}
+
+/* 搜索按钮 */
+.search {
+    float:left;
+    width: 77px;
+    height:29px;
+    margin-left:8px;
+    border-radius: 15%;
+    background-image: url('../backImg/btn_search.gif');
+}
+
+/* 内容显示 范围 */
+.contextShowScope {
+    width: 400px;
+    height: 25px;
+    border: 1px solid green;
+    background-color: #F8EBF2;
+    border-radius:10px 10px 10px 10px;
+    margin-left:30px;
+    float:left;
+    text-align:center;
+}
+
+    .contextShowScope input {
+        width: 40px;
+        border: 1px solid green;
+        margin-top:2px;
+        font-size:12px;
+        color:brown;
+    }
+
+/* 显示范围 书面文字 */
+#scopeText {
+    color: #A33B6F;
+    font-size: 12px;
+    font-family: 宋体;
+}
+
+/* 显示数目 书面文字 */
+#showCount {
+    color: green;
+    font-size: 12px;
+    font-family: 宋体;
+    margin-left:20px;
+}
+
+/* 标识目前页面显示的字条数目 */
+#recordNum {
+    font-family: 华文行楷;
+    font-weight: 700;
+    color: #FA67B1;
+}
+
+/* 内容显示主体 */
+.PageMain {
+    background-image: url('../backImg/bg.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+}
+
+/* 字条整体 */
+.NoteMain {    
+    position: absolute;
+    z-index: 4;
+    width: 240px;
+    height: 186px;
+    left: 100px;
+    top: 150px;
+    font-size: 12px;
+    font-family: 宋体;
+}
+
+/* 字条关闭 */
+.NoteClose{
+    position:relative;
+    top:-168px;
+    left:220px;
+    cursor:pointer;
+}
+
+/* 字条编号 */
+.NoteDataID {
+    display: block;
+    color: black;
+    width: 180px;
+    height: 13px;
+    padding-bottom: 3px;
+    padding-top: 10px;
+    /*border: 1px solid yellow;*/
+    text-align: left;
+    margin: 0 auto;
+}
+
+/* 内容、图标与接收人名称容器 */
+.NoteContext {
+    display:block;
+    margin-left: 15px;
+    width: 215px;
+    /*border: 1px solid red;*/
+    height: 140px;
+    word-break: break-all;
+    color: #535253;
+}
+
+    .NoteContext img{
+        padding-right:10px;
+        padding-bottom:10px;
+        width:50px;
+        height:50px;
+    }
+
+    /* 段落文字 */
+    .NoteContext p{       
+        line-height:16px;
+    }
+
+/* 接收人 */
+.NoteRecipients {
+    /*border:1px solid green;*/
+    color: red;
+    float: left;
+    width:150px;
+    padding-top:2px;
+    padding-bottom:2px;
+}
+
+/* 发送人 */
+.NoteAddresser{
+    float:right;
+    width:230px;
+    color:red;
+    text-align:right;
+    margin-right:10px;
+    padding-bottom:5px;
+}

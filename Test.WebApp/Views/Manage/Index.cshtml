@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>管理</title>
+    <link href="~/Content/manage.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="content">
+        <img class="imgIcon" src="~/Content/Image/769fdf466d504cd4a3caa50379e7a226_th.jpg" />        
+        <div class="play">
+            @Html.ActionLink("单选题", "Index", "SingleChoice")
+            @Html.ActionLink("阅读题", "Index", "ReadingMaterial")
+            @Html.ActionLink("全局变量控制","Index","GlobalVariable")
+        </div>
+        <span class="clr"></span>
+    </div>
+</body>
+</html>

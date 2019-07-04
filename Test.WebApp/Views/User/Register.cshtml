@@ -1,0 +1,90 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+    <link href="~/Content/register.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        /**清除默认文字 */
+        function clearDefaultText() {
+            if ($('.userName').children('input').val().trim() == 'userName')
+                $('.userName').children('input').val('').css('color', '#CE67CF');
+        }
+
+        /**当用户名输入框没有东西时，自动填入默认文字 */
+        function checkNameInput() {
+            if ($('.userName').children('input').val().trim() == '')
+                $('.userName').children('input').val('userName').css('color', '#ded0e1');
+        }
+
+        /**清除默认密码 */
+        function clearDefaultPwd() {
+            if ($('.passWord').children('input').val().trim() == 'passWord')
+                $('.passWord').children('input').val('').css('color', '#CE67CF');
+        }
+
+        /**清除默认邮箱文字 */
+        function clearDefaultEMail() {
+            if ($('.EMail').children('input').val().trim() == 'EMail')
+                $('.EMail').children('input').val('').css('color', '#CE67CF');
+        }
+
+        /**检测邮箱输入是否为空 */
+        function checkEMailInput() {
+            if ($('.EMail').children('input').val().trim() == '')
+                $('.EMail').children('input').val('EMail').css('color', '#ded0e1');
+        }
+    </script>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        <div class="main">
+            <!--头像-->
+            <img class="headImg" src="~/Content/Image/u=2688989491,641320165&fm=26&gp=0.jpg" />
+
+            <!--登录正文-->
+            <div class="loginContent">
+                <div style="width: auto; display: block; height: 80px;"></div>
+
+                <div class="userName">
+                    <img src="/Content/Image/klmklm.png" />
+                    <input type="text" name="Name" value="userName" onfocus="clearDefaultText()" onblur="checkNameInput()" />
+                    <span class="clr"></span>
+                </div>
+
+                <br />
+
+                <div class="passWord">
+                    <img src="/Content/Image/timg.png" />
+                    <input type="password" name="PassWord" value="passWord" onfocus="clearDefaultPwd()" />
+                    <span class="clr"></span>
+                </div>
+
+                <br />
+
+                <div class="EMail">
+                    <img src="/Content/Image/dsdf.png" />
+                    <input type="text" name="EMail" value="EMail" onfocus="clearDefaultEMail()" onblur="checkEMailInput()" />
+                    <span class="clr"></span>
+                </div>
+
+                <br />
+
+                @*<a style="font-size: 13px; margin: auto; margin-left: 100px;" href="Login.aspx">Log in to an existing account</a>*@
+                @Html.ActionLink("Log in to an existing account", "Login", new { }, new { style = "font-size: 13px; margin: auto; margin-left: 100px;" })
+
+                @*<asp:Button CssClass="loginBtn" Text="Register" ID="registerAccount" OnClick="registerAccount_Click" runat="server" />*@
+                <input type="submit" class="loginBtn" value="Register" />
+            </div>
+        </div>
+    }
+</body>
+</html>
