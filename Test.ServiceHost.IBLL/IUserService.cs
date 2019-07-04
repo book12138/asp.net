@@ -16,6 +16,7 @@ namespace Test.Service.IBLL
     [ServiceContract]
     public interface IUserService
     {
-        
+        [OperationContract]
+        string Find();
     }
 }

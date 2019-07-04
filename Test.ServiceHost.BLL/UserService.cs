@@ -12,9 +12,9 @@ namespace Test.Service.BLL
 {
     public class UserService : IUserService
     {
-        public string Find(Expression<Func<User, bool>> filter)
+        public string Find()//Expression<Func<User, bool>> filter
         {
-            return "";
+            return "你好啊";
         }
     }
 }
