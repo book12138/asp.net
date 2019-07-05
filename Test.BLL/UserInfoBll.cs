@@ -9,11 +9,8 @@ using Test.IBLL;
 
 namespace Test.BLL
 {
-    public class UserBll : MongoBaseService<User>, IUserBll
+    public class UserInfoBll : MongoDBBaseService<User>, IUserInfoBll
     {
-        public override void SetCurrentDal()
-        {
-            CurrentDal = DbSession.UserDal;
-        }
+        public override void SetCurrentDal() => base.CurrentDal = DbSession.UserDal;        
     }
 }

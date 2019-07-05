@@ -8,6 +8,6 @@ namespace Test.IBLL
 {
     public interface IBLLSession
     {
-        IUserBll UserBll { get; }
+        IUserInfoBll UserBll { get; }
     }
 }

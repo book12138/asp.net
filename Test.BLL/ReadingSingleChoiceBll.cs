@@ -9,8 +9,8 @@ using Test.Mongo.Model;
 
 namespace Test.BLL
 {
-    public class ReadingSingleChoiceBll : MongoBaseService<ReadingSingleChoice>, IReadingSingleChoiceBll
+    public class ReadingSingleChoiceBll : MongoDBBaseService<ReadingSingleChoice>, IReadingSingleChoiceBll
     {
-        public override void SetCurrentDal() => CurrentDal = DbSession.ReadingSingleChoiceDal;
+        public override void SetCurrentDal() => base.CurrentDal = DbSession.ReadingSingleChoiceDal;
     }
 }

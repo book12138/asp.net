@@ -58,7 +58,7 @@
     <Compile Include="IRedisBll.cs" />
     <Compile Include="ISingleChoiceBll.cs" />
     <Compile Include="ITestPaperBll.cs" />
-    <Compile Include="IUserBll.cs" />
+    <Compile Include="IUserInfoBll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

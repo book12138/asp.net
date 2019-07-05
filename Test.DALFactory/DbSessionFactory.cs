@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web;
 
 using Test.IDAL;
 
@@ -16,12 +16,12 @@ namespace Test.DALFactory
     {
         public static IDbSession CreateDbSession()
         {
-            IDbSession dbSession = HttpContext.Current.Items["dbSession"] as IDbSession;
+            IDbSession dbSession = CallContext.GetData("dbSession") as IDbSession;
 
             if(dbSession == null)
             {
                 dbSession = new DbSession();
-                HttpContext.Current.Items.Add("dbSession",dbSession);
+                CallContext.SetData("dbSession", dbSession);
             }
 
             return dbSession;

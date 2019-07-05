@@ -11,8 +11,8 @@ using MongoDB.Driver;
 
 namespace Test.DAL
 {
-    public class UserDal : MongoBaseDal<User>, IUserDal
+    public class UserInfoDal : MongoBaseDal<User>, IUserInfoDal
     {
-        public override void LoadMongo() => MongoCollection = MongoCollection<User>.GetCollection("EnglishItemPool", "User");
+        public override void LoadMongo() => base.MongoCollection = MongoCollection<User>.GetCollection("EnglishItemPool", "UserInfo");
     }
 }

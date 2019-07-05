@@ -16,7 +16,7 @@ namespace Test.DALFactory
 
         public IReadingSingleChoiceDal ReadingSingleChoiceDal => AbstractFactory.CreateReadingSingleChoiceDal();
 
-        public IUserDal UserDal => AbstractFactory.CreateUserDal();
+        public IUserInfoDal UserDal => AbstractFactory.CreateUserDal();
 
         public IPaperDal PaperDal => AbstractFactory.CreatePaperDal();
 

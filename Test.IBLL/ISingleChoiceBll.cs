@@ -10,7 +10,7 @@ using Test.Mongo.Model;
 
 namespace Test.IBLL
 {
-    public interface ISingleChoiceBll:IMongoDBBaseService<SingleChoice>
+    public interface ISingleChoiceBll: IMongoDBBaseBll<SingleChoice>
     {
         
     }

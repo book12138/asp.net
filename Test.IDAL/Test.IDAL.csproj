@@ -57,7 +57,7 @@
     <Compile Include="IReadingMaterialDal.cs" />
     <Compile Include="IReadingSingleChoiceDal.cs" />
     <Compile Include="ISingleChoiceDal.cs" />
-    <Compile Include="IUserDal.cs" />
+    <Compile Include="IUserInfoDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -10,8 +10,8 @@ using Test.IBLL;
 
 namespace Test.BLL
 {
-    public class ReadingMaterialBll : MongoBaseService<ReadingMaterial>, IReadingMaterialBll
+    public class ReadingMaterialBll : MongoDBBaseService<ReadingMaterial>, IReadingMaterialBll
     {
-        public override void SetCurrentDal() => CurrentDal = DbSession.ReadingMaterialDal;
+        public override void SetCurrentDal() => base.CurrentDal = DbSession.ReadingMaterialDal;
     }
 }

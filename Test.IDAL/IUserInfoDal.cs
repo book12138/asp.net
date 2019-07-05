@@ -8,7 +8,7 @@ using Test.Mongo.Model;
 
 namespace Test.IDAL
 {
-    public interface IUserDal : IMongoDBBaseDal<User>
+    public interface IUserInfoDal : IMongoDBBaseDal<User>
     {
     }
 }

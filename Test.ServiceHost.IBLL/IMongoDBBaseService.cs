@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
 using MongoDB.Driver;
 
-namespace Test.IBLL
+namespace Test.Service.IBLL
 {
-    public interface IMongoDBBaseBll<T> where T : class , new()
+    [ServiceContract]
+    public interface IMongoDBBaseService<T> where T : class, new()
     {
         /// <summary>
         /// 更新单篇文档(就算匹配到多个可跟新的文档，但是它也只会更新匹配结果中的第一篇)
@@ -17,6 +19,7 @@ namespace Test.IBLL
         /// <param name="filter">条件</param>
         /// <param name="update">新值</param>
         /// <returns></returns>
+        [OperationContract]
         bool UpdateOne(Expression<Func<T, bool>> filter, UpdateDefinition<T> update);
 
         /// <summary>
@@ -25,6 +28,7 @@ namespace Test.IBLL
         /// <param name="filter">条件</param>
         /// <param name="update">新值</param>
         /// <returns></returns>
+        [OperationContract]
         bool UpdateMany(Expression<Func<T, bool>> filter, UpdateDefinition<T> update);
 
         /// <summary>
@@ -32,12 +36,14 @@ namespace Test.IBLL
         /// </summary>
         /// <param name="model"></param>
         /// <returns></returns>
+        [OperationContract]
         void InsertOne(T model);
 
         /// <summary>
         /// 插入多篇文档
         /// </summary>
         /// <param name="models"></param>
+        [OperationContract]
         void InsertMany(IEnumerable<T> models);
 
         /// <summary>
@@ -45,6 +51,7 @@ namespace Test.IBLL
         /// </summary>
         /// <param name="filter"></param>
         /// <returns></returns>
+        [OperationContract]
         bool DeleteMany(Expression<Func<T, bool>> filter);
 
         /// <summary>
@@ -52,6 +59,7 @@ namespace Test.IBLL
         /// </summary>
         /// <param name="filter"></param>
         /// <returns></returns>
+        [OperationContract]
         bool DeleteOne(Expression<Func<T, bool>> filter);
 
         /// <summary>
@@ -59,6 +67,7 @@ namespace Test.IBLL
         /// </summary>
         /// <param name="filter"></param>
         /// <returns></returns>
+        [OperationContract]
         List<T> Find(Expression<Func<T, bool>> filter);
     }
 }

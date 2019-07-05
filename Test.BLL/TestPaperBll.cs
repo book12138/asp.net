@@ -22,9 +22,9 @@ namespace Test.BLL
     /// <summary>
     /// 试卷
     /// </summary>
-    public class TestPaperBll : MongoBaseService<Paper> , ITestPaperBll
+    public class TestPaperBll : MongoDBBaseService<Paper> , ITestPaperBll
     {
-        public override void SetCurrentDal() => CurrentDal = DbSession.PaperDal;       
+        public override void SetCurrentDal() => base.CurrentDal = DbSession.PaperDal;       
 
         #region 数据层实例
         /// <summary>

@@ -14,9 +14,7 @@ namespace Test.Service.IBLL
     /// 用户服务
     /// </summary>
     [ServiceContract]
-    public interface IUserService
-    {
-        [OperationContract]
-        string Find();
+    public interface IUserInfoService : IMongoDBBaseService<User>
+    {        
     }
 }

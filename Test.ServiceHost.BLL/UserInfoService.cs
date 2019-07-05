@@ -7,14 +7,12 @@ using System.Threading.Tasks;
 
 using Test.Mongo.Model;
 using Test.Service.IBLL;
+using Test.BLL;
 
 namespace Test.Service.BLL
 {
-    public class UserService : IUserService
+    public class UserInfoService : MongoDBBaseService<User>, IUserInfoService
     {
-        public string Find()//Expression<Func<User, bool>> filter
-        {
-            return "你好啊";
-        }
+        public override void SetCurrentBll() => base.CurrentBll = new UserInfoBll();        
     }
 }

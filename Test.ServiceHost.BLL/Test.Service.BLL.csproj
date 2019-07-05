@@ -31,6 +31,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>..\..\..\ASP.net\test\packages\MongoDB.Bson.2.7.3\lib\net45\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>..\..\..\ASP.net\test\packages\MongoDB.Driver.2.7.3\lib\net45\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core">
+      <HintPath>..\..\..\ASP.net\test\packages\MongoDB.Driver.Core.2.7.3\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,10 +50,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UserService.cs" />
+    <Compile Include="MongoDBBaseService.cs" />
+    <Compile Include="UserInfoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Test.BLLFactory\Test.BLLFactory.csproj">
+      <Project>{5be9ebd6-4f89-442a-8322-993fd3901b11}</Project>
+      <Name>Test.BLLFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Test.BLL\Test.BLL.csproj">
+      <Project>{A33A9F40-B52B-438D-BC99-97A53CFD38D0}</Project>
+      <Name>Test.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Test.IBLL\Test.IBLL.csproj">
+      <Project>{59d456ec-3723-40cd-989c-5bf9cc77ab7d}</Project>
+      <Name>Test.IBLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Test.Mongo.Model\Test.Mongo.Model.csproj">
       <Project>{60A2E843-C27D-4F55-84D3-D11353905EF5}</Project>
       <Name>Test.Mongo.Model</Name>

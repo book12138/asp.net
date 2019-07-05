@@ -13,6 +13,6 @@ namespace Test.DAL
 {
     public class ReadingMaterialDal : MongoBaseDal<ReadingMaterial> , IReadingMaterialDal
     {
-        public override void LoadMongo() => MongoCollection = MongoCollection<ReadingMaterial>.GetCollection("EnglishItemPool", "ReadingMaterial");
+        public override void LoadMongo() => base.MongoCollection = MongoCollection<ReadingMaterial>.GetCollection("EnglishItemPool", "ReadingMaterial");
     }
 }

@@ -16,6 +16,6 @@ namespace Test.DAL
 {
     public class SingleChoiceDal : MongoBaseDal<SingleChoice> , ISingleChoiceDal
     {
-        public override void LoadMongo() => MongoCollection = MongoCollection<SingleChoice>.GetCollection("EnglishItemPool", "SingleChoice");
+        public override void LoadMongo() => base.MongoCollection = MongoCollection<SingleChoice>.GetCollection("EnglishItemPool", "SingleChoice");
     }
 }

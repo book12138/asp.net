@@ -42,10 +42,10 @@ namespace Test.DALFactory
             return CreateInstance(fullClassName) as IReadingSingleChoiceDal;
         }
 
-        public static IUserDal CreateUserDal()
+        public static IUserInfoDal CreateUserDal()
         {
             string fullClassName = namespaceString + ".UserDal";
-            return CreateInstance(fullClassName) as IUserDal;
+            return CreateInstance(fullClassName) as IUserInfoDal;
         }
 
         public static IPaperDal CreatePaperDal()

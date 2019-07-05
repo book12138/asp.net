@@ -9,7 +9,7 @@ using Test.Mongo.Model;
 
 namespace Test.IBLL
 {
-    public interface IGlobalVariableBll : IMongoDBBaseService<GlobalVariable>
+    public interface IGlobalVariableBll : IMongoDBBaseBll<GlobalVariable>
     {
         /// <summary>
         /// 修改单篇文档（不允许修改name，只允许修改value和describe）

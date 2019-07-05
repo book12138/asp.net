@@ -14,7 +14,7 @@ namespace Test.IDAL
 
         IReadingSingleChoiceDal ReadingSingleChoiceDal { get; }
 
-        IUserDal UserDal { get; }
+        IUserInfoDal UserDal { get; }
 
         IPaperDal PaperDal { get; }
 

@@ -13,7 +13,7 @@ namespace Test.Host
     {
         static void Main(string[] args)
         {
-            using (ServiceHost host = new ServiceHost(typeof(UserService)))
+            using (ServiceHost host = new ServiceHost(typeof(UserInfoService)))
             {
                 host.Open();
                 Console.WriteLine("服务已启动，按任意键中止...");

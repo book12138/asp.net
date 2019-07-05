@@ -10,6 +10,6 @@ namespace Test.BLLFactory
 {
     public class BLLSession : IBLLSession
     {
-        public IUserBll UserBll => AbstractFactory.CreateUserBll();
+        public IUserInfoBll UserBll => AbstractFactory.CreateUserBll();
     }
 }

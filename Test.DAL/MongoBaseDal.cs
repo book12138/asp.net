@@ -24,7 +24,7 @@ namespace Test.DAL
         /// <summary>
         /// 构造方法（当子类在编译时，会执行此构造方法，从而实现主动执行子类重写的LoadMongo方法，完成mongo初始化）
         /// </summary>
-        public MongoBaseDal() => LoadMongo();
+        public MongoBaseDal() => this.LoadMongo();
 
         /// <summary>
         /// 修改单篇文档，而且仅能修改某一个字段的值(即使有多篇文档符合匹配条件，但是也仅仅只会修改第一篇)
@@ -51,7 +51,7 @@ namespace Test.DAL
         /// <returns></returns>
         public bool UpdateMany(Expression<Func<T, bool>> filter,UpdateDefinition<T> update)
         {
-            var result = MongoCollection.UpdateMany(filter, update);
+            var result = this.MongoCollection.UpdateMany(filter, update);
             return result.ModifiedCount > 0;
         }
 
@@ -65,7 +65,7 @@ namespace Test.DAL
         /// 插入多篇文档
         /// </summary>
         /// <param name="models"></param>
-        public void InsertMany(IEnumerable<T> models) => MongoCollection.InsertMany(models);
+        public void InsertMany(IEnumerable<T> models) => this.MongoCollection.InsertMany(models);
 
         /// <summary>
         /// 删除一篇文档（即使有多篇文档符合匹配条件，但是也仅仅只会删除第一篇）

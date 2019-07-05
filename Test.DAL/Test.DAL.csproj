@@ -59,7 +59,7 @@
     <Compile Include="ReadingMaterialDal.cs" />
     <Compile Include="ReadingSingleChoiceDal.cs" />
     <Compile Include="SingleChoiceDal.cs" />
-    <Compile Include="UserDal.cs" />
+    <Compile Include="UserInfoDal.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Test.Enum\Test.Enum.csproj">

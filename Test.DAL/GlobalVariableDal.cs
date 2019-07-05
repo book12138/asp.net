@@ -11,6 +11,6 @@ namespace Test.DAL
 {
     public class GlobalVariableDal : MongoBaseDal<GlobalVariable>, IGlobalVariableDal
     {
-        public override void LoadMongo() => MongoCollection = MongoCollection<GlobalVariable>.GetCollection("EnglishItemPool", "GlobalVariable");
+        public override void LoadMongo() => base.MongoCollection = MongoCollection<GlobalVariable>.GetCollection("EnglishItemPool", "GlobalVariable");
     }
 }

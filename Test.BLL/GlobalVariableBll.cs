@@ -12,9 +12,9 @@ using MongoDB.Driver;
 
 namespace Test.BLL
 {
-    public class GlobalVariableBll : MongoBaseService<GlobalVariable>, IGlobalVariableBll
+    public class GlobalVariableBll : MongoDBBaseService<GlobalVariable>, IGlobalVariableBll
     {
-        public override void SetCurrentDal() => CurrentDal = DbSession.GlobalVariableDal;
+        public override void SetCurrentDal() => base.CurrentDal = DbSession.GlobalVariableDal;
 
         /// <summary>
         /// 修改单篇文档（不允许修改name，只允许修改value和describe）

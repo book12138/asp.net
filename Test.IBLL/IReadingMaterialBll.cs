@@ -8,7 +8,7 @@ using Test.Mongo.Model;
 
 namespace Test.IBLL
 {
-    public interface IReadingMaterialBll : IMongoDBBaseService<ReadingMaterial>
+    public interface IReadingMaterialBll : IMongoDBBaseBll<ReadingMaterial>
     {
     }
 }

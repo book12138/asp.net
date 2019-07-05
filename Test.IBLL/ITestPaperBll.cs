@@ -10,7 +10,7 @@ using MongoDB.Bson;
 
 namespace Test.IBLL
 {
-    public interface ITestPaperBll : IMongoDBBaseService<Paper>
+    public interface ITestPaperBll : IMongoDBBaseBll<Paper>
     {
         /// <summary>
         /// 抽取选择题

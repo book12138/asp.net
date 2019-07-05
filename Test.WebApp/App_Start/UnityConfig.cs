@@ -48,7 +48,7 @@ namespace Test.WebApp
             container.RegisterType<IReadingMaterialBll, ReadingMaterialBll>();
             container.RegisterType<IReadingSingleChoiceBll, ReadingSingleChoiceBll>();
             container.RegisterType<ITestPaperBll, TestPaperBll>();
-            container.RegisterType<IUserBll, UserBll>();
+            container.RegisterType<IUserInfoBll, UserInfoBll>();
             container.RegisterType<IRedisBll, RedisBll>();
             container.RegisterType<IGlobalVariableBll, GlobalVariableBll>();
         }

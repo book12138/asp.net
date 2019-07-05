@@ -8,7 +8,7 @@ using Test.Mongo.Model;
 
 namespace Test.IBLL
 {
-    public interface IUserBll : IMongoDBBaseService<User>
+    public interface IUserInfoBll : IMongoDBBaseBll<User>
     {
     }
 }

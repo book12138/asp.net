@@ -13,6 +13,6 @@ namespace Test.DAL
 {
     public class PaperDal : MongoBaseDal<Paper>, IPaperDal
     {
-        public override void LoadMongo() => MongoCollection = MongoCollection<Paper>.GetCollection("EnglishItemPool","Paper");    
+        public override void LoadMongo() => base.MongoCollection = MongoCollection<Paper>.GetCollection("EnglishItemPool","Paper");    
     }
 }

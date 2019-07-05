@@ -24,10 +24,10 @@ namespace Test.BLLFactory
             return assembly.CreateInstance(className);
         }
 
-        public static IUserBll CreateUserBll()
+        public static IUserInfoBll CreateUserBll()
         {
             string fullClassName = namespaceString + ".SingleChoiceDal";
-            return CreateInstance(fullClassName) as IUserBll;
+            return CreateInstance(fullClassName) as IUserInfoBll;
         }       
     }
 }

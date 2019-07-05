@@ -8,7 +8,7 @@ using Test.Mongo.Model;
 
 namespace Test.IBLL
 {
-    public interface IReadingSingleChoiceBll : IMongoDBBaseService<ReadingSingleChoice>
+    public interface IReadingSingleChoiceBll : IMongoDBBaseBll<ReadingSingleChoice>
     {
     }
 }

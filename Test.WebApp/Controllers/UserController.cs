@@ -16,13 +16,13 @@ namespace Test.WebApp.Controllers
         /// <summary>
         /// 用户业务层
         /// </summary>
-        public IUserBll UserService { get; set; }
+        public IUserInfoBll UserService { get; set; }
 
         /// <summary>
         /// 构造函数
         /// </summary>
         /// <param name="userService"></param>
-        public UserController(IUserBll userService)
+        public UserController(IUserInfoBll userService)
         {
             UserService = userService;
         }
